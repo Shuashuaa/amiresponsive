@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <AmIResponsive />
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/amIResponsive.vue'
+import { defineComponent } from 'vue';
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+// Components
+import AmIResponsive from '../components/features/amIResponsive.vue';
+
+export default defineComponent({
+    components: {
+        AmIResponsive,
+    },
+});
 </script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
