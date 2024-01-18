@@ -49,10 +49,10 @@
         
         <!-- laptop  big -->
 
-        <v-card style="width: 100%;" class="d-none d-lg-flex d-xl-none justify-center" elevation="0">
+        <v-card style="width: 100%; padding-bottom: 50px;" :height="height" class="d-none d-lg-flex d-xl-none justify-center align-center" elevation="0">
             <v-spacer/>
             
-            <v-card style="margin-top: 90px" width="400" elevation="0">
+            <v-card width="400" elevation="0" class="pt-16">
                 <h1 class="text-infos">Am I Responsive?</h1>
                 <p class="text-infos">`Am I Responsive?` is a tool for developers, especially front-end developers to check the responsiveness of their websites without using an actual gadgets. bu.. but not in prod!.</p>
                 
@@ -80,19 +80,17 @@
 
             <v-spacer/>
 
-            <v-card class="justify-center d-flex mt-3" style="position: relative;" width="800" height="690" elevation="0">
-                <div>
-                    <iframe :src="defaultSource" class="iframe-pc" frameborder="0" width="1600" height="900" style="position: absolute; z-index: 2; right: -305px; bottom: -20px; "></iframe>
-                    <v-img src="/amIResponsive/desktop.png" width="860" style="position: absolute; right: 70px; top: 0; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
-                </div>
+            <v-card class="justify-center d-flex" style="position: relative;" width="800" height="720" elevation="0">
                 
                 <iframe :src="defaultSource" class="iframe-laptop" frameborder="0" width="1280" height="802" style="position: absolute; z-index: 3; right: -415px; bottom: -205px;"></iframe>
-                <iframe :src="defaultSource" class="iframe-tablet" frameborder="0" width="610" height="800" style="position: absolute; z-index: 3; left: -130px; bottom: -205px;"></iframe>
-                <iframe :src="defaultSource" class="iframe-mobile" frameborder="0" width="300" height="500" style="position: absolute; z-index: 4; left: 175px; bottom: -80px;"></iframe>
-                
-                <v-img src="/amIResponsive/phone.png" width="250" height="240" style="position: absolute; left: 200px; bottom: 50px; z-index: 3; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                <iframe :src="defaultSource" class="iframe-tablet" frameborder="0" width="610" height="800" style="position: absolute; z-index: 3; left: -190px; bottom: -205px;"></iframe>
+                <iframe :src="defaultSource" class="iframe-mobile" frameborder="0" width="300" height="500" style="position: absolute; z-index: 4; left: 105px; bottom: -80px;"></iframe>
+                <iframe :src="defaultSource" class="iframe-pc" frameborder="0" width="1500" height="920" style="position: absolute; z-index: 2; right: -285px; bottom: -33px; "></iframe>
+                    
+                <v-img src="/amIResponsive/desktop.png" width="860" style="position: absolute; right: 70px; top: 30px; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                <v-img src="/amIResponsive/phone.png" width="250" height="240" style="position: absolute; left: 130px; bottom: 50px; z-index: 3; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
                 <v-img src="/amIResponsive/laptop.png" width="550" style="position: absolute; right: -50px; bottom: 20px; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
-                <v-img src="/amIResponsive/tablet.png" width="350" style="position: absolute; left: 0; bottom: 20px; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                <v-img src="/amIResponsive/tablet.png" width="350" style="position: absolute; left: -60px; bottom: 20px; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
                 
             </v-card>
 
@@ -164,6 +162,8 @@
 import { ref } from 'vue';
 export default {
     setup() {
+
+        const height = ref(innerHeight);
         
         const defaultSource = ref('https://pinia.vuejs.org')
 
@@ -192,7 +192,7 @@ export default {
             }
         }
 
-        return { getAddress, searchedSource, defaultSource } 
+        return { height, getAddress, searchedSource, defaultSource } 
     }
 }
 </script>
