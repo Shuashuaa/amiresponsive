@@ -1,4 +1,14 @@
-# amiresponsive
+## Roadmap
+
+```
+
+- [x] Can Access & Display Both Local (http) & Global (https) Systems
+- [ ] Show/Hide Function for Each Display
+- [ ] Dark Mode
+- [ ] Download as PNG or other image format
+
+
+```
 
 ## Project setup
 ```

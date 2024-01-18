@@ -1,22 +1,31 @@
 {
-  "name": "amiresponsive",
+  "name": "vueport111123",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "serve": "vite preview",
+    "build": "vite build",
+    "lint": "vue-cli-service lint",
+    "dev": "vite"
   },
   "dependencies": {
+    "@mdi/font": "5.9.55",
+    "animejs": "^3.2.2",
     "core-js": "^3.8.3",
+    "pinia": "^2.1.7",
     "register-service-worker": "^1.7.2",
+    "roboto-fontface": "*",
     "vue": "^3.2.13",
+    "vue-kinesis": "^2.0.5",
     "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vuetify": "^3.0.0-beta.0",
+    "vuex": "^4.0.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@vitejs/plugin-vue": "^3.0.3",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-pwa": "~5.0.0",
@@ -26,6 +35,9 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "sass-loader": "^12.0.0",
+    "vite": "^3.0.8",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.8"
   }
 }
