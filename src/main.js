@@ -1,7 +1,26 @@
+import './css/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
 import router from './router'
-import store from './store'
+import vuetify from './plugins/vuetify'
+import { loadFonts } from './plugins/webfontloader'
+import { createPinia } from 'pinia'
+import VueKinesis from "vue-kinesis";
 
-createApp(App).use(store).use(router).mount('#app')
+loadFonts()
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  } else {
+    document.title = '404';
+  }
+  next();
+});
+
+createApp(App)
+  .use(router)
+  .use(vuetify) //mdi
+  .use(createPinia())
+  .use(VueKinesis)
+  .mount('#app')
