@@ -1,9 +1,9 @@
 <template>
     <center>
-
+        {{scWidth}}
         <!-- pc -->
 
-        <v-card style="padding-top: 50px; width: 80%;" class="d-none d-lg-none d-xl-flex justify-center" elevation="0">
+        <v-card style="padding-top: 50px; width: 80%;" class="d-none d-lg-none d-xl-flex d-xxl-block justify-center align-center" elevation="0">
             <v-card width="500" style="padding-top: 130px;" elevation="0">
                 <h1 class="text-infos">Am I Responsive?</h1>
                 <p class="text-infos">`Am I Responsive?` is a tool for developers, especially front-end developers to check the responsiveness of their websites without using an actual gadgets. bu.. but not in prod!.</p>
@@ -29,19 +29,22 @@
 
             </v-card>
 
-            <v-card class="justify-center d-flex" style="position: relative;" width="1200" height="800" elevation="0">
-                <div>
-                    <iframe :src="defaultSource" class="iframe-pc" frameborder="0" width="1600" height="900" style="position: absolute; z-index: 2; right: -205px; bottom: 78px; "></iframe>
-                    <v-img src="/amIResponsive/desktop.png" width="860" style="position: absolute; right: 170px; top: 0; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
-                </div>
+            <v-card :height="height-300" elevation="0">
+                <v-card width="1200" :height="height-300">
+                    <div>
+                        <iframe :src="defaultSource" class="iframe-pc" frameborder="0" width="1600" height="900" style="position: absolute; z-index: 2; right: -205px; bottom: 78px; "></iframe>
+                        <v-img src="/amIResponsive/desktop.png" width="860" style="position: absolute; right: 170px; top: 0; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                    </div>
+                    
+                    <iframe :src="defaultSource" class="iframe-laptop" frameborder="0" width="1280" height="802" style="position: absolute; z-index: 3; right: -365px; top: 225px;"></iframe>
+                    <iframe :src="defaultSource" class="iframe-tablet" frameborder="0" width="768" height="1024" style="position: absolute; z-index: 3; left: -164px; top: 70px;"></iframe>
+                    <iframe :src="defaultSource" class="iframe-mobile" frameborder="0" width="310" height="500" style="position: absolute; z-index: 4; left: 226px; bottom: -140px;"></iframe>
+                    
+                    <v-img src="/amIResponsive/phone.png" width="250" height="240" style="position: absolute; left: 255px; bottom: -10px; z-index: 3; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                    <v-img src="/amIResponsive/laptop.png" width="550" style="position: absolute; right: 0; bottom: 0; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                    <v-img src="/amIResponsive/tablet.png" width="440" style="position: absolute; left: 0; bottom: 0; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
+                </v-card>
                 
-                <iframe :src="defaultSource" class="iframe-laptop" frameborder="0" width="1280" height="802" style="position: absolute; z-index: 3; right: -365px; top: 225px;"></iframe>
-                <iframe :src="defaultSource" class="iframe-tablet" frameborder="0" width="768" height="1024" style="position: absolute; z-index: 3; left: -164px; top: 70px;"></iframe>
-                <iframe :src="defaultSource" class="iframe-mobile" frameborder="0" width="310" height="500" style="position: absolute; z-index: 4; left: 226px; bottom: -140px;"></iframe>
-                
-                <v-img src="/amIResponsive/phone.png" width="250" height="240" style="position: absolute; left: 255px; bottom: -10px; z-index: 3; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
-                <v-img src="/amIResponsive/laptop.png" width="550" style="position: absolute; right: 0; bottom: 0; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
-                <v-img src="/amIResponsive/tablet.png" width="440" style="position: absolute; left: 0; bottom: 0; z-index: 2; -webkit-filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));"></v-img>
                 
             </v-card>
                 
@@ -49,7 +52,7 @@
         
         <!-- laptop  big -->
 
-        <v-card style="width: 100%; padding-bottom: 50px;" :height="height" class="d-none d-lg-flex d-xl-none justify-center align-center" elevation="0">
+        <v-card style="width: 100%; padding-bottom: 50px;" class="d-none d-lg-block d-xl-none justify-center align-center" elevation="0">
             <v-spacer/>
             
             <v-card width="400" elevation="0" class="pt-16">
@@ -163,6 +166,8 @@ import { ref } from 'vue';
 export default {
     setup() {
 
+        const scWidth = ref(innerWidth);
+
         const height = ref(innerHeight);
         
         const defaultSource = ref('https://pinia.vuejs.org')
@@ -192,7 +197,7 @@ export default {
             }
         }
 
-        return { height, getAddress, searchedSource, defaultSource } 
+        return { scWidth, height, getAddress, searchedSource, defaultSource } 
     }
 }
 </script>
