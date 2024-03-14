@@ -1,6 +1,9 @@
 ## Roadmap
 
 ```
+TechStack
+- [x] Vite
+- [x] TailwindCss
 
 - [x] Can Access & Display Both Local (http) & Global (https) Systems
 - [ ] Show/Hide Function for Each Display
