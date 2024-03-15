@@ -4,6 +4,7 @@
 TechStack
 - [x] Vite
 - [x] TailwindCss
+- [x] Firebase || Supabase
 
 - [x] Can Access & Display Both Local (http) & Global (https) Systems
 - [ ] Show/Hide Function for Each Display
