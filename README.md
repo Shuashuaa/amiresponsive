@@ -1,18 +1,12 @@
-## Roadmap
+<h1>Amiresponsive</h1>
 
-```
-TechStack
-- [x] Vite
-- [x] TailwindCss
-- [x] Firebase || Supabase
+# Project Features ✨
 
+- [x] Vuejs - Vite
+- [ ] Vuetify => TailwindCss
 - [x] Can Access & Display Both Local (http) & Global (https) Systems
 - [ ] Show/Hide Function for Each Display
-- [ ] Dark Mode
 - [ ] Download as PNG or other image format
-
-
-```
 
 ## Project setup
 ```
