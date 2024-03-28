@@ -1,5 +1,5 @@
 ## Amiresponsive
-<img src="https://github.com/ViktorLuna/vue3-amiresponsive/assets/150304387/ae6485fe-9af6-453e-845b-6c30c2700f3b"/>
+<img src="https://github.com/Shuashuaa/Amiresponsive/assets/96514740/77e38706-5105-48c2-ade4-b110db1e3df5"/>
 
 ### Project Features ✨
 
