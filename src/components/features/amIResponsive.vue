@@ -73,7 +73,7 @@ export default {
         const scWidth = ref(innerWidth);
         const height = ref(innerHeight);
         
-        const defaultSource = ref('https://pinia.vuejs.org')
+        const defaultSource = ref('https://shuashuaa.netlify.app')
         const searchedSource = ref('')
 
         const getAddress = async() => {
