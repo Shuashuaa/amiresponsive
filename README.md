@@ -1,5 +1,5 @@
 ## Amiresponsive
-<img src="https://github.com/Shuashuaa/Amiresponsive/assets/96514740/77e38706-5105-48c2-ade4-b110db1e3df5"/>
+<img src="https://github.com/Shuashuaa/Amiresponsive/assets/96514740/b19bbd2d-0ccc-40b8-9ff6-a72af8f8031d"/>
 
 ### Project Features ✨
 
