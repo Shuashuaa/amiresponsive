@@ -7,7 +7,7 @@
             
             <v-card width="400" elevation="0" class="pt-16">
                 <h1 class="title-infos">Am I Responsive?</h1>
-                <p class="text-infos">is a tool for developers to check the responsiveness of their websites without using an actual gadgets. bu.. but not for prod!.</p>
+                <p class="text-infos">is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
                 
                 <v-text-field hide-details class="mt-10" v-model="searchedSource" placeholder="ex. https://pinia.vuejs.org"></v-text-field>
                 <p class="text-infos mb-5 mt-2" style="font-size: 13px; color: gray;"><u>http://sample.com</u> or <u>http://127.0.0.1:8000</u> or <u>http://localhost:5173</u> or simply paste your development url for local development.</p>
@@ -44,7 +44,7 @@
                    <a style="text-decoration: none; color: #01b4d2;" href="https://github.com/shuashuaa">Jovi Joshua Tania</a></b>.
                 </p>
 
-                <v-btn class="text-infos mb-8" href="https://github.com/Shuashuaa/Am-I-Responsive" size="small" style="background-color: #ffffff; color: black; border: 1px solid #6e7175; text-transform: capitalized; letter-spacing: 1px;" variant="outlined">
+                <v-btn disabled class="text-infos mb-8" href="https://github.com/Shuashuaa/amiresponsive" size="small" style="background-color: #ffffff; color: black; border: 1px solid #6e7175; text-transform: capitalized; letter-spacing: 1px;" variant="outlined">
                     <v-icon class="mr-1">mdi-open-in-new</v-icon>
                     Source Code
                 </v-btn>
