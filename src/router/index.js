@@ -8,7 +8,7 @@ const router = new createRouter({
 	mode: 'history',
 	routes: [
 		{
-			path: '/amiresponsive',
+			path: '/rspnsv',
 			name: 'amiresponsive',
 			component: amIResponsive,
 			meta: { title: 'Am I Responsive?' },//##
@@ -25,9 +25,9 @@ const router = new createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-    if(to.path !== '/amiresponsive'){
+    if(to.path !== '/rspnsv'){
       if(to.path == '/'){
-        next('/amiresponsive')
+        next('/rspnsv')
       }else{
         next()
       }
