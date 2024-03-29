@@ -1,4 +1,6 @@
 ## Amiresponsive
+is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.
+
 <img src="https://github.com/Shuashuaa/Amiresponsive/assets/96514740/b19bbd2d-0ccc-40b8-9ff6-a72af8f8031d"/>
 
 ### Project Features ✨
