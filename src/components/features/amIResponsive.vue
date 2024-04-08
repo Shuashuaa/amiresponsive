@@ -34,7 +34,7 @@
             <v-spacer/>    
                 <v-divider/>
 
-                <p class="text-infos mt-16 mb-8" style="font-size: 13px; color: gray;">@ 2023 | Created with 
+                <p id="footer" class="text-infos mt-16 mb-8" style="font-size: 13px; color: gray;">@ 2023 | Created with 
                     <!-- passion -->
                     <v-icon>mdi-heart</v-icon> 
                     and 
@@ -77,7 +77,7 @@ export default {
         const searchedSource = ref('')
 
         const scrollToSample = () => {
-            const sampleElement = document.getElementById("visual");
+            const sampleElement = document.getElementById("footer");
                 if (sampleElement) {
                     sampleElement.scrollIntoView({ behavior: "smooth" });
                     setTimeout(() => {
