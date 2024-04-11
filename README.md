@@ -18,26 +18,3 @@ is a tool to check the responsiveness of websites without using an actual gadget
 <img src="https://vitejs.dev/logo-with-shadow.png" width="200"/>
 <img src="https://pbs.twimg.com/media/Ei5n6vBWoAEy5gp.png" width="200" center/>
 </div>
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
