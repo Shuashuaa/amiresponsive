@@ -7,7 +7,7 @@
                 class="loginComponent"
                 style="padding-top: 300px; position: relative;"
                 >
-                    <h1 class="gomenMobile d-block d-sm-none bold-pop">`Gomen'nasai'</h1>
+                    <h1 class="gomenMobile d-block d-sm-none bold-pop">`Am I Ree..sspo..n..'</h1>
 
                     <h1 class="gomenPC d-none d-sm-block bold-pop">`Gomen'nasai'</h1>
 
