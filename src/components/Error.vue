@@ -7,9 +7,9 @@
                 class="loginComponent"
                 style="padding-top: 300px; position: relative;"
                 >
-                    <h1 class="gomenMobile d-block d-sm-none bold-pop">`Gomen'nasai'</h1>
+                    <h1 class="gomenMobile d-block d-sm-none bold-pop">`Am I Ree..sspo..n..'</h1>
 
-                    <h1 class="gomenPC d-none d-sm-block bold-pop">`Gomen'nasai'</h1>
+                    <h1 class="gomenPC d-none d-sm-block bold-pop">`Am I Ree..sspo..n..'</h1>
 
                     <h3 style="color: #58636d;"> 404 | Page Not Found </h3>
                     <p class="text-infos mb-6">The page you are looking for might have been removed, had it's name changed or is temporarily unavailable.</p> 
