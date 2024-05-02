@@ -41,7 +41,7 @@
                     <!-- joy -->
                     <v-icon>mdi-coffee</v-icon> 
                     by <br><b class="ghublink" style="color: #01b4d2;">
-                   <a style="text-decoration: none; color: #01b4d2;" href="https://github.com/shuashuaa">Jovi Joshua Tania</a></b>.
+                   <a style="text-decoration: none; color: #01b4d2;" href="https://shuashuaa.netlify.app">Jovi Joshua Tania</a></b>.
                 </p>
 
                 <v-btn disabled class="text-infos mb-8" href="https://github.com/Shuashuaa/amiresponsive" size="small" style="background-color: #ffffff; color: black; border: 1px solid #6e7175; text-transform: capitalized; letter-spacing: 1px;" variant="outlined">
