@@ -29,3 +29,7 @@ yarn install
 or
 npm install
 ```
+## Run
+```
+yarn dev
+```
