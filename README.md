@@ -23,3 +23,9 @@ is a tool to check the responsiveness of websites without using an actual gadget
 ```
 git clone ${}
 ```
+## Installation
+```
+yarn install
+or
+npm install
+```
