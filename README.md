@@ -18,3 +18,8 @@ is a tool to check the responsiveness of websites without using an actual gadget
 <img src="https://vitejs.dev/logo-with-shadow.png" width="200"/>
 <img src="https://pbs.twimg.com/media/Ei5n6vBWoAEy5gp.png" width="200" center/>
 </div>
+
+## Page Setup
+```
+git clone ${}
+```
