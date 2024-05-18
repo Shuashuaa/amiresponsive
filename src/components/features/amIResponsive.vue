@@ -9,7 +9,7 @@
                 <h1 class="title-infos">Am I Responsive?</h1>
                 <p class="text-infos">is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
                 
-                <v-text-field hide-details class="mt-10" v-model="searchedSource" placeholder="ex. https://pinia.vuejs.org"></v-text-field>
+                <v-text-field hide-details class="mt-10" v-model="searchedSource" placeholder="ex. https://nuxt.com/?uwu"></v-text-field>
                 <p class="text-infos mb-5 mt-2" style="font-size: 13px; color: gray;"><u>http://sample.com</u> or <u>http://127.0.0.1:8000</u> or <u>http://localhost:5173</u> or simply paste your development url for local development.</p>
                 <v-btn @click="getAddress(), scrollToContent()" variant="block" block style="background-color: #01b4d2; color:#f5f5f5;" elevation="2">Go Flex!</v-btn>
 
