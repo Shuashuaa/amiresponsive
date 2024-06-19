@@ -1,35 +1,33 @@
-## Amiresponsive
-is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.
+# portfoliov2
 
-<img src="https://github.com/Shuashuaa/Amiresponsive/assets/96514740/b19bbd2d-0ccc-40b8-9ff6-a72af8f8031d"/>
+This template should help get you started developing with Vue 3 in Vite.
 
-### Project Features ✨
+## Recommended IDE Setup
 
-- [x] Vuejs3
-- [x] Vite
-- [x] Vuetify3
-- [x] Can Access & Display Both Local (http) & Global (https) Systems
-- [ ] Show/Hide Function for Each Display
-- [ ] Dark Mode
-- [ ] Download as PNG or other image format
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-<div center>
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogospng.org%2Fdownload%2Fvue.js%2Fvue-js-2048.png&f=1&nofb=1&ipt=680d479655f4fd80c9893dd39a3d12415e5f35edff3ff9edf38a7b680240797a&ipo=images" width="180"/>
-<img src="https://vitejs.dev/logo-with-shadow.png" width="200"/>
-<img src="https://pbs.twimg.com/media/Ei5n6vBWoAEy5gp.png" width="200" center/>
-</div>
+## Type Support for `.vue` Imports in TS
 
-## Page Setup
-```
-git clone ${}
-```
-## Installation
-```
-yarn install
-or
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
 npm install
 ```
-## Run
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
-yarn dev
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
 ```
