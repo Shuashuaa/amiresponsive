@@ -5,9 +5,9 @@ is a tool to check the responsiveness of websites without using an actual gadget
 
 ### Project Features ✨
 
-- [x] Vuejs3
+- [x] Vuejs3 => TypeScript
 - [x] Vite
-- [x] Vuetify3
+- [x] Vuetify3 => TailwindCSS
 - [x] Can Access & Display Both Local (http) & Global (https) Systems
 - [ ] Show/Hide Function for Each Display
 - [ ] Dark Mode
