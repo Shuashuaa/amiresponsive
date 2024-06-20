@@ -5,7 +5,7 @@ is a tool to check the responsiveness of websites without using an actual gadget
 
 ### Project Features ✨
 
-- [x] Vuejs3 => TypeScript
+- [x] Vuejs3 => Vuejs3 TypeScript
 - [x] Vite
 - [x] Vuetify3 => TailwindCSS
 - [x] Can Access & Display Both Local (http) & Global (https) Systems
