@@ -1,0 +1,21 @@
+.iframe-pc{
+    transform: scale(0.4150);
+    -webkit-transform: scale(0.4150);
+    -o-transform: scale(0.4150);
+    -ms-transform: scale(0.4150);
+    -moz-transform: scale(0.4150);
+}
+.iframe-laptop{
+    transform: scale(0.277);
+    -webkit-transform: scale(0.320);
+    -o-transform: scale(0.320);
+    -ms-transform: scale(0.320);
+    -moz-transform: scale(0.320);
+}
+.iframe-tablet, .iframe-mobile{
+    transform: scale(0.4181);
+    -webkit-transform: scale(0.3181);
+    -o-transform: scale(0.3181);
+    -ms-transform: scale(0.3181);
+    -moz-transform: scale(0.3181);
+}
