@@ -1,6 +1,6 @@
 <template>
 	<div class="App">
-		<h1 style="font-size: 77px;">hello there!.</h1>
+		<h1 style="font-size: 77px;">!</h1>
 	</div>
 	
 	<RouterView/>
@@ -15,7 +15,3 @@ export default defineComponent({
 });
 
 </script>
-
-<style>
-
-</style>
