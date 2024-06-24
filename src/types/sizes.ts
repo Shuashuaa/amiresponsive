@@ -1,8 +1,7 @@
 export default interface sizes {
-    s: string,
-    m: string,
-    l: string,
-    xl: string,
-    xxl: string,
+    mobile: number,
+    tablet: number,
+    laptop: number,
+    pc: number,
     isAvailable: boolean
 }
