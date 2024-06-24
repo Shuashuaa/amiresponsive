@@ -9,6 +9,8 @@ is a tool to check the responsiveness of websites without using an actual gadget
 - [x] Vite
 - [x] Vuetify3 => TailwindCSS
 - [x] Can Access & Display Both Local (http) & Global (https) Systems
+- [ ] Auto-animate on visit
+- [ ] Router condition
 - [ ] Show/Hide Function for Each Display
 - [ ] Dark Mode
 - [ ] Download as PNG or other image format
