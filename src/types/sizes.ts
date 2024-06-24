@@ -1,7 +1,7 @@
 export default interface sizes {
-    mobile: number,
-    tablet: number,
-    laptop: number,
-    pc: number,
+    mobile: string,
+    tablet: string,
+    laptop: string,
+    pc: string,
     isAvailable: boolean
 }
