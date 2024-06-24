@@ -1,4 +1,4 @@
-interface sizes {
+export interface sizes {
     s: string,
     m: string,
     l: string,
@@ -6,5 +6,3 @@ interface sizes {
     xxl: string,
     isAvailable: boolean
 }
-
-export default sizes
