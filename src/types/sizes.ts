@@ -6,3 +6,5 @@ interface sizes {
     xxl: string,
     isAvailable: boolean
 }
+
+export default sizes
