@@ -1,4 +1,4 @@
-export interface sizes {
+export default interface sizes {
     s: string,
     m: string,
     l: string,
