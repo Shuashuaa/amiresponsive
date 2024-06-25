@@ -1,6 +1,5 @@
 <template>
     <div style="display: flex; justify-content: center;">
-
         <div style="display: flex; justify-content: center; position: relative; width: 900px; height: 850px; ">
 
             <iframe :src="defaultSource" class="iframe-pc" frameborder="0" width="1600" height="900" style="position: absolute; z-index: 2; right: -305px; bottom: 100px; "></iframe>
@@ -22,7 +21,7 @@
 
 export default{
     setup() {
-        let defaultSource = 'https://pinia.vuejs.org/?uwu'
+        let defaultSource = 'https://nuxt.com/?uwu'
 
         return { defaultSource }
     },
