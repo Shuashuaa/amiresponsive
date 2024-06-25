@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
 
-body{
-    font-family: "Danfo", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "ELSH" 0;
-
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+*{
+    margin: 0 !important;
 }
-
 .iframe-pc{
     transform: scale(0.4150);
     -webkit-transform: scale(0.4150);
