@@ -1,4 +1,5 @@
 <template>
+    
     <div style="display: flex; justify-content: center;">
         <div style="display: flex; justify-content: center; position: relative; width: 900px; height: 850px; ">
 
@@ -21,7 +22,8 @@
 
 export default{
     setup() {
-        let defaultSource = 'https://nuxt.com/?uwu'
+        // let defaultSource = 'https://nuxt.com/?uwu'
+        let defaultSource = ''
 
         return { defaultSource }
     },
