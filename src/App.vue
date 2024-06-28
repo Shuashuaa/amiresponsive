@@ -1,20 +1,33 @@
 <template>
-	
+	<div class="area">
+		<ul class="circles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
 	<div class="App" id="gradient">
 		<div class="header"> 
 			<div class="flex flex-col w-4/12 gap-3">
-				<h1 class="text-4xl font-bold">Am I Responsive?</h1>
+				<h1 class="text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
 				<p>is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
-				<input type="text">
+				<input v-model="searchedSource" type="text" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
 				<p>http://sample.com or http://127.0.0.1:8000 or http://localhost:5173 or simply paste your development url for local development.</p>
-				<button class="w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
+				<button @click="getAddress(searchedSource)" class="w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
 					Go flex
 				</button>
 			</div>
 		</div>
 		
 		<div class="components">
-			<RouterView/>
+			<RouterView :link="defaultSource" />
 		</div>
 
 		<div class="footer">
@@ -40,11 +53,45 @@
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from 'vue';
+import type { Link } from './types/link';
 
 export default defineComponent({
 	name: 'App',
 
 	setup() {
+
+		const defaultSource = ref<Link>('https://shuashuaa.netlify.app');
+        const searchedSource = ref<Link>('');
+
+		// const scrollToContent = () => { // to change dynamically for every frameworks
+        //     if(searchedSource.value == ''){
+        //         return
+        //     }
+        //     const sampleElement = document.getElementById("visual");
+        //     sampleElement.scrollIntoView({ behavior: "smooth" });
+        // }
+
+		// onMounted(() => { // to change dynamically for every frameworks
+        //     setTimeout(() => {
+        //         scrollToSample();
+        //     }, 500);
+        // });
+
+		const getAddress = async(searchedSource : Link) => {
+            if(searchedSource != '' && searchedSource != 'https://amiresponsive.netlify.app' && searchedSource != 'https://amiresponsive.netlify.app/'){
+                if(!searchedSource.includes('https://') && !searchedSource.includes('http://')){
+                    defaultSource.value = 'https://' + searchedSource;
+                }else if(searchedSource.includes('http://')){
+                    defaultSource.value = searchedSource;
+                }else{
+                    defaultSource.value = searchedSource;
+                }
+            }else{
+                alert("You can't flex an empty link :D")
+            }
+        }
+
+		return { searchedSource, defaultSource, getAddress }
 	}
 	
 });
@@ -57,12 +104,11 @@ export default defineComponent({
 		height: 100vh;
 		width: 100vw;
 		overflow: auto;
-		background: rgba(255, 255, 255, 0.09);
+		background: rgba(255, 255, 255, 0.25);
 		border-radius: 16px;
 		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-		backdrop-filter: blur(8.1px);
-		-webkit-backdrop-filter: blur(8.1px);
-		border: 1px solid rgba(255, 255, 255, 0.3);
+		backdrop-filter: blur(7.2px);
+		-webkit-backdrop-filter: blur(7.2px);
 	}
 	
 	.header {
@@ -71,7 +117,7 @@ export default defineComponent({
 		text-align: center;
 		align-items: center;
 		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		padding: 100px 20px 0px 0px;
+		padding: 80px 20px 0px 0px;
 	}
 
 	.footer{
