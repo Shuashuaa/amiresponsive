@@ -19,13 +19,26 @@
 </template>
 
 <script lang="ts">
+import type { PropType } from 'vue';
+import type { Link } from '@/types/link';
+import { ref, computed } from 'vue';
 
 export default{
-    setup() {
-        // let defaultSource = 'https://nuxt.com/?uwu'
-        let defaultSource = ''
+    props: {
+        link: {
+            required: true,
+            type: String as PropType<Link>
+        }
+    },
+    setup(props) {
+        // let defaultSource = ref<Link>('');
+        // let defaultSource = 'https://shuashuaa.netlify.app'
+        console.log(props.link)
+        const getLink = computed(() => {
+            return defaultSource.value = props.link as string;
+        })
 
-        return { defaultSource }
+        return { getLink }
     },
 }
 </script>
