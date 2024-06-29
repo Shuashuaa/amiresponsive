@@ -78,14 +78,7 @@ export default defineComponent({
         const getAddress = (searchedSource: Link) => {
             if (searchedSource && searchedSource !== 'https://amiresponsive.netlify.app' && searchedSource !== 'https://amiresponsive.netlify.app/') {
                 if (!searchedSource.includes('https://') && !searchedSource.includes('http://')) {
-                    if(searchedSource.includes('https://')){
-                        alert('https')
-                        defaultSource.value = 'https://' + searchedSource;
-                    }else{
-                        alert('http')
-                        defaultSource.value = 'http://' + searchedSource;
-                    }
-                    
+                    defaultSource.value = 'https://' + searchedSource;
                 } else {
                     defaultSource.value = searchedSource;
                 }
