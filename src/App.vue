@@ -15,12 +15,12 @@
     </div>
     <div class="App" id="gradient">
         <div class="header"> 
-            <div class="flex flex-col w-4/12 gap-3">
-                <h1 class="text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
+            <div class="flex flex-col w-3/4 md:w-3/4 lg:w-4/12 xl:w-4/12 gap-3">
+                <h1 class="justify-content center text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
                 <p>is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
-                <input v-model="searchedSource" type="text" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
-                <p>http://sample.com or http://127.0.0.1:8000 or http://localhost:5173 or simply paste your development url for local development.</p>
-                <button @click="getAddress(searchedSource)" class="w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
+                <input v-model="searchedSource" type="text" class="hidden md:block lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
+                <p class="hidden md:block lg:block xl:block">http://sample.com or http://127.0.0.1:8000 or http://localhost:5173 or simply paste your development url for local development.</p>
+                <button @click="getAddress(searchedSource)" class="hidden md:block lg:block xl:block w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
                     Go flex
                 </button>
             </div>
@@ -30,7 +30,7 @@
             <RouterView :link="defaultSource" />
         </div>
 
-        <div class="footer">
+        <div class="footer hidden md:block lg:block xl:block">
             <div class="relative flex py-5 items-center">
                 <div class="flex-grow border-t border-gray-300"></div>
                     <span class="px-10">
