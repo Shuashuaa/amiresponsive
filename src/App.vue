@@ -9,11 +9,16 @@
         <div id="visual" class="flex justify-between items-center p-5">
             <img width="45" draggable="false" src="./assets/imgs/am i responsive.png" alt="">
             <div class="flex gap-4">
-                <button class="text-center p-2 pb-3">
-                    <svg class="size-6 hover:fill-gray-800 hover:drop-shadow-lg transition delay-75 duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" >
+                <button class="cursor-default text-center p-2 pb-3">
+                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                     </svg>
                 </button>
+                <!-- <button class="text-center p-2 pb-3">
+                    <svg class="size-6 hover:fill-gray-800 hover:drop-shadow-lg transition delay-75 duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="gray" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                    </svg>
+                </button> -->
 
                 <div class="h-[40px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div>
                 
@@ -24,9 +29,9 @@
                         </svg>
 
                         <p class="text-gray-500 text-md">{{ stargazersCount }}</p>
-                        <svg class="w-5 h-5 strsoke-slate-500 fill-none hover:fill-gray-800 hover:shadow-lg transition delay-75 duration-300 ease-in-out" viewBox="0 0 16 16" aria-hidden="true">
+                        <!-- <svg class="w-5 h-5 strsoke-slate-500 fill-none hover:fill-gray-800 hover:shadow-lg transition delay-75 duration-300 ease-in-out" viewBox="0 0 16 16" aria-hidden="true">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                        </svg>
+                        </svg> -->
                     </button>
                 </a>
                 
@@ -54,7 +59,7 @@
                 <div class="w-1/2 h-px"
                     style="background-image: linear-gradient(240deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.8) 40.83%, rgba(149, 131, 198, 0.8) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
                 </div>
-                    <div style="width: 200px;"> 
+                    <div class="flex w-[200px]"> 
                         <a href="https://github.com/Shuashuaa/Amiresponsive">
                            <button class="w-full flex font-mono text-gray-700 gap-2 items-center border border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24">
