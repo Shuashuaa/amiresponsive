@@ -35,7 +35,7 @@ As a front-end developer, hypotetically for most websites the responsiveness tak
 
 ### to run local development apps like `http://localhost:5173/ or http://192.168.1.5:5173/ or http://127.0.0.0/`
 ```
-git clone ${}
+git clone ${}0
 yarn or npm install
 yarn dev
 ```
