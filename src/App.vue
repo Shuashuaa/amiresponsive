@@ -136,7 +136,7 @@ export default defineComponent({
                     sampleElement.scrollIntoView({ behavior: "smooth" });
                     setTimeout(() => {
                         sampleElement1.scrollIntoView({ behavior: "smooth" });
-                    }, 1000);
+                    }, 1500);
                 }
         }
 
