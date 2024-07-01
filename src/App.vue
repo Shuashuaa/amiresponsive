@@ -125,11 +125,11 @@ export default defineComponent({
             }
 
             setTimeout(() => {
-                scrollToSample();
+                scrollToContentOnView();
             }, 500);
         });
 
-        const scrollToSample = () => {
+        const scrollToContentOnView = () => {
             const sampleElement = document.getElementById("footer") as HTMLElement | null;
             const sampleElement1 = document.getElementById("visual") as HTMLElement | null;
                 if (sampleElement && sampleElement1) {
@@ -160,7 +160,7 @@ export default defineComponent({
             }
         }
 
-        return { searchedSource, defaultSource, scrollToContent, scrollToSample, getAddress, stargazersCount }
+        return { searchedSource, defaultSource, scrollToContent, scrollToContentOnView, getAddress, stargazersCount }
     }
 });
 </script>
