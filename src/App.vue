@@ -60,7 +60,7 @@
                 <h1 class="justify-content center text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
                 <p>is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
                 <input v-model="searchedSource" type="text" class="hidden md:block lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
-                <p class="hidden md:block lg:block xl:block text-sm">use <span class="underline cursor-pointer" @click="searchedSource = 'https://nuxt.com/?uwu', getAddress('https://nuxt.com/?uwu'), scrollToContent()">https://nuxt.com/?uwu</span> or just <span class="underline cursor-pointer" @click="searchedSource = 'nuxt.com/?uwu', getAddress('nuxt.com/?uwu'), scrollToContent()">nuxt.com/?uwu</span> for global websites and for local development, please refer to this link <a style="text-decoration: underline;" href="https://github.com/Shuashuaa/Amiresponsive/blob/main/README.md#run-it">README.MD</a>.</p>
+                <p class="hidden md:block lg:block xl:block text-sm">use <span class="underline cursor-pointer" @click="searchedSource = 'https://nuxt.com/?uwu', getAddress('https://nuxt.com/?uwu'), scrollToContent()">https://nuxt.com/?uwu</span> or just <span class="underline cursor-pointer" @click="searchedSource = 'nuxt.com/?uwu', getAddress('nuxt.com/?uwu'), scrollToContent()">nuxt.com/?uwu</span> for global websites and for local development, Please refer to this link <a style="text-decoration: underline;" href="https://github.com/Shuashuaa/Amiresponsive/blob/main/README.md#run-it">README.MD</a>.</p>
                 <button @click="scrollToContent(), getAddress(searchedSource)" class="hidden md:block lg:block xl:block w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
                     Go flex
                 </button>
@@ -68,7 +68,7 @@
         </div>
         
         <div id="content" class="components">
-            <RouterView :link="defaultSource" />
+            <RouterView :link="defaultSource"/>
         </div>
 
         <div class="footer hidden md:block lg:block xl:block">
