@@ -149,7 +149,17 @@ import { onMounted, defineComponent, ref } from 'vue';
 import type { Link } from './types/link';
 import AnimaContent from './views/AnimaContent.vue';
 import { stars } from './stargazers';
+import Hotjar from '@hotjar/browser';
 
+const siteId = 5049874;
+const hotjarVersion = 6;
+
+Hotjar.init(siteId, hotjarVersion);
+
+// Initializing with `debug` option:
+Hotjar.init(siteId, hotjarVersion, {
+    debug: true
+});
 
 export default defineComponent({
     name: 'amiresponsive',
