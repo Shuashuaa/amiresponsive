@@ -11,10 +11,10 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
-    "@hotjar/browser": "^1.0.9",
     "axios": "^1.7.2",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
+    "vue-hotjar": "^1.4.0",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
