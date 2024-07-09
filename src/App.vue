@@ -54,9 +54,9 @@
         <div class="header"> 
             <div class="flex flex-col w-3/4 md:w-3/4 lg:w-4/12 xl:w-4/12 gap-3">
                 <h1 class="justify-content center text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
-                <p>is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
-                <input v-model="searchedSource" type="text" class="hidden md:block lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
-                <p class="hidden md:block lg:block xl:block text-sm text-[#343a40]">
+                <p class="hidden md:[857px] lg:block xl:block">is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
+                <input v-model="searchedSource" type="text" class="hidden md:[857px] lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
+                <p class="hidden md:[857px] lg:block xl:block text-sm text-[#343a40]">
                     use 
                     <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'https://nuxt.com/?uwu', getAddress('https://nuxt.com/?uwu'), scrollToContent()">https://nuxt.com/?uwu</span> 
                     or just <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'nuxt.com/?uwu', getAddress('nuxt.com/?uwu'), scrollToContent()">nuxt.com/?uwu</span> 
@@ -64,7 +64,7 @@
                     format or any links related.
                     <!-- for global websites and for local development, Please refer to this link <a style="text-decoration: underline;" href="https://github.com/Shuashuaa/Amiresponsive/blob/main/README.md#run-it">README.MD</a>. -->
                 </p>
-                <button @click="scrollToContent(), getAddress(searchedSource)" class="hidden md:block lg:block xl:block w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
+                <button @click="scrollToContent(), getAddress(searchedSource)" class="hidden md:[857px] lg:block xl:block w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
                     Go flex
                 </button>
             </div>
@@ -74,13 +74,13 @@
             <RouterView :link="defaultSource"/>
         </div>
 
-        <div class="footer hidden md:block lg:block xl:block">
+        <div class="footer">
             <div class="relative flex py-5 items-center">
                 <!-- <div class="flex-grow border-t border-gray-300"></div> -->
                 <div class="w-1/2 h-px"
                     style="background-image: linear-gradient(240deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.8) 40.83%, rgba(149, 131, 198, 0.8) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
                 </div>
-                    <div class="flex w-[200px]"> 
+                    <div class="hidden md:[857px] lg:block xl:block flex w-[200px]"> 
                         <a href="https://github.com/Shuashuaa/Amiresponsive">
                            <button class="w-full flex font-mono text-gray-700 gap-2 items-center border border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@
                     style="background-image: linear-gradient(90deg, rgba(149, 131, 198, 0) 1.46%, rgba(149, 131, 198, 0.8) 40.83%, rgba(149, 131, 198, 0.8) 65.57%, rgba(149, 131, 198, 0) 107.92%);">
                 </div>
             </div>
-            <div id="footer" class="flex justify-between items-center">
+            <div id="footer" class="hidden md:[857px] lg:flex xl:flex justify-between items-center">
                 <!-- <img width="90" draggable="false" src="./assets/imgs/am i responsive.png" alt=""> -->
                 <svg width="75" height="75" viewBox="0 0 55 67" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_i_8_31)">
