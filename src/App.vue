@@ -60,8 +60,8 @@
                     use 
                     <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'https://nuxt.com/?uwu', getAddress('https://nuxt.com/?uwu'), scrollToContent()">https://nuxt.com/?uwu</span> 
                     or just <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'nuxt.com/?uwu', getAddress('nuxt.com/?uwu'), scrollToContent()">nuxt.com/?uwu</span> 
-                    format for global websites and for local, use <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'http://localhost:5173/', getAddress('http://localhost:5173/'), scrollToContent()">http://localhost:5173/</span> 
-                    format or any links related.
+                    format for global websites and <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'http://localhost:5173/', getAddress('http://localhost:5173/'), scrollToContent()">http://localhost:5173/</span> 
+                    for local, use format or any links related.
                     <!-- for global websites and for local development, Please refer to this link <a style="text-decoration: underline;" href="https://github.com/Shuashuaa/Amiresponsive/blob/main/README.md#run-it">README.MD</a>. -->
                 </p>
                 <button @click="scrollToContent(), getAddress(searchedSource)" class="hidden md:[857px] lg:block xl:block w-full h-10 text-center font-mono font-semibold gap-2 items-center border text-white bg-[#01b4d2] border-slate-300 rounded-lg px-4 py-1 hover:bg-blue-100 hover:shadow-lg transition delay-75 duration-300 ease-in-out">
