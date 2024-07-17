@@ -23,10 +23,11 @@ is a tool to check the responsiveness of websites without using an actual gadget
     <img src="./src/assets/imgs/image-4.png" width="200" center/>
 </div>
 
-## Future Features ⏳
+## Roadmap ⏳
+<!-- Future Features ⏳ -->
 
 - [ ] Users can create an account
-- [ ] Users created an account can save their outputs via limited inventory
+- [ ] Users created an account can save their outputs via inventory
 
 ## Why?
 Most websites are now being used on different devices.
