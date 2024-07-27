@@ -122,7 +122,7 @@
                 </svg>
 
                 <div class="text-right">
-                    <button class="font-mono text-gray-800 font-bold text-md transition delay-75 duration-300 ease-in-out hover:border hover:rounded hover:border-gray-300 hover:shadow-md p-2 ml-5">version 1.2.1.0</button>
+                    <button class="font-mono text-gray-800 font-bold text-md transition delay-75 duration-300 ease-in-out hover:border hover:rounded hover:border-gray-300 hover:shadow-md p-2 ml-5">version 2.0.0.0</button>
                     <div class="flex items-center gap-2">
                         <p class="flex font-mono text-gray-700 text-sm gap-1.5">
                             <span class="font-mono">Made with</span>
