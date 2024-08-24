@@ -29,7 +29,7 @@
                     </svg>
                 </button> -->
 
-                <div class="h-[40px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div>
+                <!-- <div class="h-[40px] min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div> -->
                 
                 <a href="https://github.com/Shuashuaa/Amiresponsive" class="pt-0.5">
                     
