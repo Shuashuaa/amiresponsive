@@ -14,8 +14,8 @@
 
         <div class="block md:[857px] lg:hidden xl:hidden pt-10">
             <div class="mt-5 bg-red-100 p-24 font-bold">
-                <p class="pb-5 text-lg">Sorry, but it is not advisable to check the responsiveness of a website using smaller devices. Thank you.</p>
-                <p class="pb-5 text-lg">Please try to access the app using a large tablet, laptop, or PC to continue.</p>
+                <p class="pb-5 text-lg">Sorry, but it is not advisable to check a website's responsiveness using smaller devices. Thank you.</p>
+                <p class="pb-5 text-lg">Please try to access the app using large devices like large tablet, laptop, or PC to continue.</p>
                 
                 <a href="https://shuashuaa.netlify.app/"><button class="py-5 border p-2 rounded-md bg-red-400 w-full">I Understand</button></a>
             </div>
