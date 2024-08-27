@@ -33,7 +33,7 @@ is a tool to check the responsiveness of websites without using an actual gadget
 Most websites are now being used on different devices.
 > As a front-end developer, hypothetically, responsiveness takes up about 90% of the whole project for most websites if implemented for multiple devices. Imagine creating a full-stack app where all the functions are set up, the backend and database are finished, and the trial is on Monday. Now, imagine reading this and realizing that your website isn't yet responsive.
 
-## Run it!
+## Test it!
 
 - <a href="https://amiresponsive.netlify.app/">https://amiresponsive.netlify.app/</a>
 
