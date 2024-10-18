@@ -1,5 +1,5 @@
 ## Amiresponsive
-is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.
+is a tool to check the responsiveness of websites without using an actual gadgets.
 
 <img src="./src/assets/imgs/image-2.png"/>
 
