@@ -54,7 +54,7 @@
         <div class="header"> 
             <div class="flex flex-col w-3/4 md:w-3/4 lg:w-4/12 xl:w-4/12 gap-3">
                 <h1 class="justify-content center text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
-                <p class="hidden md:[857px] lg:block xl:block">is a tool to check the responsiveness of websites without using an actual gadgets. bu.. but not for prod!.</p>
+                <p class="hidden md:[857px] lg:block xl:block">is a tool to check the responsiveness of websites without using an actual gadgets.</p>
                 <input v-model="searchedSource" type="text" class="hidden md:[857px] lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
                 <p class="hidden md:[857px] lg:block xl:block text-sm text-[#343a40]">
                     use 
