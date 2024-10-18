@@ -41,7 +41,7 @@ export default {
             return props.link;
         });
 
-        return { getLink, hehe }
+        return { getLink }
     }
 }
 </script>
