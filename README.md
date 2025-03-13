@@ -1,3 +1,4 @@
+[![ci-test](https://github.com/Shuashuaa/amiresponsive/actions/workflows/ci.yml/badge.svg)](https://github.com/Shuashuaa/amiresponsive/actions/workflows/ci.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8cf7b954-67c1-4533-b3b5-fa74f47286a4/deploy-status)](https://app.netlify.com/sites/amiresponsive/deploys)
 <!-- #01b4d2 -->
 ## Amiresponsive
