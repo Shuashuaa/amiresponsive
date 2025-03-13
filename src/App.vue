@@ -55,11 +55,11 @@
             <div class="flex flex-col w-3/4 md:w-3/4 lg:w-4/12 xl:w-4/12 gap-3">
                 <h1 class="justify-content center text-4xl font-black text-[#343a40]">Am I Responsive?</h1>
                 <p class="hidden md:[857px] lg:block xl:block">is a tool to check the responsiveness of websites without using an actual gadgets.</p>
-                <input v-model="searchedSource" type="text" class="hidden md:[857px] lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://nuxt.com/?uwu">
+                <input v-model="searchedSource" type="text" class="hidden md:[857px] lg:block xl:block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset sm:text-sm sm:leading-6" placeholder="ex. https://react.dev/?uwu">
                 <p class="hidden md:[857px] lg:block xl:block text-sm text-[#343a40]">
                     use 
-                    <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'https://nuxt.com/?uwu', getAddress('https://nuxt.com/?uwu'), scrollToContent()">https://nuxt.com/?uwu</span> 
-                    or just <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'nuxt.com/?uwu', getAddress('nuxt.com/?uwu'), scrollToContent()">nuxt.com/?uwu</span> 
+                    <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'https://react.dev/?uwu', getAddress('https://react.dev/?uwu'), scrollToContent()">https://react.dev/?uwu</span> 
+                    or just <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'react.dev/?uwu', getAddress('react.dev/?uwu'), scrollToContent()">react.dev/?uwu</span> 
                     format for global websites and <span class="underline cursor-pointer hover:font-bold hover:text-gray-800 transition-all" @click="searchedSource = 'http://localhost:5173/', getAddress('http://localhost:5173/'), scrollToContent()">http://localhost:5173/</span> 
                     for local, use format or any links related.
                     <!-- for global websites and for local development, Please refer to this link <a style="text-decoration: underline;" href="https://github.com/Shuashuaa/Amiresponsive/blob/main/README.md#run-it">README.MD</a>. -->
